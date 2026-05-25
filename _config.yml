@@ -1,0 +1,17 @@
+title: Flying Pants Flower Farm
+description: Specialty dahlias, sunflowers, seasonal flowers, and farm stand updates.
+url: "https://flyingpants.farm"
+baseurl: ""
+permalink: /:title/
+markdown: kramdown
+
+collections:
+  flowers:
+    output: true
+    permalink: /flowers/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
