@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: vetharmon/flyingpantsfarm
   branch: main
 
