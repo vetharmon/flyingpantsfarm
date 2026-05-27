@@ -1,2 +1,2 @@
 ---
-BUNDLE_PATH: "/home/vetharmon/.local/share/gem"
+BUNDLE_PATH: "vendor/bundle"
