@@ -15,14 +15,14 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--moss);
   background: var(--cream);
   line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   line-height: 1.05;
   color: var(--moss);
 }
@@ -65,8 +65,9 @@ a {
   gap: .6rem;
   color: var(--moss);
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: .03em;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: .02em;
 }
 
 .brand-mark {
