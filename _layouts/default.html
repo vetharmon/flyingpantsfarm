@@ -13,5 +13,69 @@
       {{ content }}
     </main>
     {% include footer.html %}
+
+    <div class="popup-overlay" id="emailPopup">
+      <div class="popup">
+        <button class="popup-close" id="popupClose" aria-label="Close">&times;</button>
+        <div id="popupContent">
+          <div class="popup-icon">✿</div>
+          <h2>Stay in Bloom</h2>
+          <p>Sign up for farm updates, bloom alerts, and seasonal availability.</p>
+          <form class="popup-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="newsletterForm">
+            <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+            <input type="email" name="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="popup-success" id="popupSuccess">
+          <div class="popup-icon">✿</div>
+          <p>Thanks for subscribing!</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    (function() {
+      var STORAGE_KEY = 'fpf_popup_dismissed';
+      var overlay = document.getElementById('emailPopup');
+      var closeBtn = document.getElementById('popupClose');
+      var form = document.getElementById('newsletterForm');
+      var content = document.getElementById('popupContent');
+      var success = document.getElementById('popupSuccess');
+
+      if (localStorage.getItem(STORAGE_KEY)) return;
+
+      setTimeout(function() {
+        overlay.classList.add('active');
+      }, 2000);
+
+      function close() {
+        overlay.classList.remove('active');
+        localStorage.setItem(STORAGE_KEY, '1');
+      }
+
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) close();
+      });
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var data = new URLSearchParams(new FormData(form)).toString();
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: data
+        }).then(function() {
+          content.style.display = 'none';
+          success.style.display = 'block';
+          localStorage.setItem(STORAGE_KEY, '1');
+          setTimeout(function() {
+            overlay.classList.remove('active');
+          }, 2500);
+        });
+      });
+    })();
+    </script>
   </body>
 </html>

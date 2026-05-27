@@ -1,12 +1,12 @@
 :root {
-  --cream: #F6F1E7;
-  --linen: #E7DDCF;
-  --sage: #A7B59E;
-  --olive: #5E6B47;
-  --moss: #38412F;
-  --dahlia: #6E2E3B;
-  --sunflower: #D6A437;
-  --rose: #B87C7C;
+  --cream: #FAFAF7;
+  --linen: #F0F3EB;
+  --sage: #7DB56B;
+  --olive: #4A8B3C;
+  --moss: #2B5329;
+  --dahlia: #E0557A;
+  --sunflower: #F2B824;
+  --rose: #F08E8E;
 }
 
 * {
@@ -51,10 +51,10 @@ a {
   justify-content: space-between;
   gap: 2rem;
   padding: 1rem clamp(1rem, 4vw, 3rem);
-  border-bottom: 1px solid rgba(56, 65, 47, .18);
+  border-bottom: 1px solid rgba(43, 83, 41, .14);
   position: sticky;
   top: 0;
-  background: rgba(246, 241, 231, .94);
+  background: rgba(250, 250, 247, .94);
   backdrop-filter: blur(8px);
   z-index: 10;
 }
@@ -99,7 +99,7 @@ a {
   align-items: center;
   padding: clamp(3rem, 8vw, 7rem) clamp(1rem, 5vw, 5rem);
   background:
-    linear-gradient(rgba(246, 241, 231, .72), rgba(246, 241, 231, .86)),
+    linear-gradient(rgba(250, 250, 247, .72), rgba(250, 250, 247, .86)),
     url("/assets/images/gallery/hero-flowers.svg");
   background-size: cover;
   background-position: center;
@@ -167,8 +167,8 @@ a {
 }
 
 .card {
-  background: rgba(255, 255, 255, .38);
-  border: 1px solid rgba(56, 65, 47, .18);
+  background: rgba(255, 255, 255, .62);
+  border: 1px solid rgba(43, 83, 41, .14);
   border-radius: 1.5rem;
   padding: 1.4rem;
 }
@@ -203,13 +203,13 @@ a {
 
 .notice {
   border-left: 6px solid var(--sunflower);
-  background: rgba(214, 164, 55, .12);
+  background: rgba(242, 184, 36, .12);
   padding: 1rem 1.25rem;
   border-radius: .75rem;
 }
 
 .shopify-placeholder {
-  border: 2px dashed rgba(56, 65, 47, .35);
+  border: 2px dashed rgba(43, 83, 41, .30);
   border-radius: 1.5rem;
   padding: 2rem;
   background: rgba(255, 255, 255, .35);
@@ -220,7 +220,7 @@ a {
   justify-content: space-between;
   gap: 2rem;
   padding: 2rem clamp(1rem, 5vw, 5rem);
-  border-top: 1px solid rgba(56, 65, 47, .18);
+  border-top: 1px solid rgba(43, 83, 41, .14);
   background: var(--moss);
   color: var(--cream);
 }
@@ -246,5 +246,125 @@ a {
 
   .site-nav {
     margin-top: 1rem;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup {
+  background: var(--cream);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  max-width: 420px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .18);
+}
+
+.popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--moss);
+  opacity: .6;
+  line-height: 1;
+  padding: .25rem;
+}
+
+.popup-close:hover {
+  opacity: 1;
+}
+
+.popup-icon {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+}
+
+.popup h2 {
+  font-size: 1.6rem;
+  margin: 0 0 .5rem;
+}
+
+.popup p {
+  margin: 0 0 1.5rem;
+  color: var(--olive);
+  font-size: .95rem;
+}
+
+.popup-form {
+  display: flex;
+  gap: .5rem;
+}
+
+.popup-form input[type="email"] {
+  flex: 1;
+  padding: .75rem 1rem;
+  border: 1px solid rgba(43, 83, 41, .2);
+  border-radius: 999px;
+  font-size: .95rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.popup-form input[type="email"]:focus {
+  border-color: var(--dahlia);
+}
+
+.popup-form button {
+  padding: .75rem 1.3rem;
+  background: var(--dahlia);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .95rem;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.popup-form button:hover {
+  opacity: .9;
+}
+
+.popup-success {
+  display: none;
+  padding: 1rem 0;
+}
+
+.popup-success p {
+  color: var(--moss);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 480px) {
+  .popup-form {
+    flex-direction: column;
+  }
+
+  .popup {
+    padding: 2rem 1.5rem;
   }
 }
