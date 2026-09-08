@@ -20,10 +20,13 @@ description: Welcome to Flying Pants Flower Farm.
 <section class="section">
   <div class="grid two">
     <div>
-      <p class="eyebrow">Find us</p>
-      <h2>Fresh flowers, farm updates, and seasonal availability.</h2>
+      <p class="eyebrow">Farm Updates</p>
+      <h2>Seasonal availability.</h2>
       <p>
-        Follow along for bloom updates, farm stand hours, tuber sales, bouquet availability, and behind-the-scenes garden notes.
+        Follow along for bloom updates, farm stand hours, and behind-the-scenes garden notes.
+      </p>
+      <p>
+        🌱 Tuber sales open soon — check back for our full list of dahlia varieties.
       </p>
     </div>
     <div class="card">
