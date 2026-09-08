@@ -1,6 +1,6 @@
 ---
 title: Current Events
-description: Current events and seasonal updates from Flying Pants Flower Farm.
+description: Current events and seasonal updates from Flying Pants Farm.
 ---
 
 <header class="page-header">

@@ -1,12 +1,12 @@
 ---
 title: Welcome
-description: Welcome to Flying Pants Flower Farm.
+description: Welcome to Flying Pants Farm.
 ---
 
 <section class="hero">
   <div class="hero-inner">
     <p class="eyebrow">Specialty dahlias & seasonal flowers</p>
-    <h1>Flying Pants Flower Farm</h1>
+    <h1>Flying Pants Farm</h1>
     <p class="lede">
       A small flower farm growing dahlias, sunflowers, seasonal bouquets, and a little bit of joy.
     </p>

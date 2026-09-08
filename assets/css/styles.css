@@ -71,8 +71,8 @@ a {
 }
 
 .brand-mark {
-  color: var(--sunflower);
-  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .site-nav {
@@ -200,6 +200,13 @@ a {
 .content {
   max-width: 900px;
   padding: 0 clamp(1rem, 5vw, 5rem) clamp(3rem, 7vw, 6rem);
+}
+
+.farm-photo {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
 }
 
 .notice {
