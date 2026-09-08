@@ -11,7 +11,7 @@ description: Welcome to Flying Pants Flower Farm.
       A small flower farm growing dahlias, sunflowers, seasonal bouquets, and a little bit of joy.
     </p>
     <div class="button-row">
-      <a class="button" href="/gallery/">View the Flowers</a>
+      <a class="button" href="/about/">About Us</a>
       <a class="button secondary" href="/sales/">Shop Tubers</a>
     </div>
   </div>
@@ -32,18 +32,5 @@ description: Welcome to Flying Pants Flower Farm.
       <p><strong>Instagram:</strong> <a href="https://instagram.com/YOUR_INSTAGRAM">@YOUR_INSTAGRAM</a></p>
       <p><strong>Location:</strong> Add your town/region here</p>
     </div>
-  </div>
-</section>
-
-<section class="section alt">
-  <p class="eyebrow">Seasonal notes</p>
-  <h2>Current updates</h2>
-  <div class="grid three">
-    {% for post in site.posts limit:3 %}
-      <article class="card">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p>{{ post.excerpt | strip_html | truncate: 130 }}</p>
-      </article>
-    {% endfor %}
   </div>
 </section>
