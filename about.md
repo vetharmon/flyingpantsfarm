@@ -1,13 +1,13 @@
 ---
 title: About Us
-description: About Flying Pants Flower Farm.
+description: About Flying Pants Farm.
 ---
 
 <header class="page-header">
   <p class="eyebrow">Our story</p>
   <h1>About Us</h1>
   <p class="lede">
-    Flying Pants Flower Farm is a small, seasonal flower farm focused on dahlias, sunflowers, and joyful local blooms.
+    Flying Pants Farm is a small, seasonal flower farm focused on dahlias, sunflowers, and joyful local blooms.
   </p>
 </header>
 
