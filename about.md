@@ -29,13 +29,14 @@ description: About Flying Pants Farm.
   </p>
 
   <img
-    class="lindsey-photo"
-    src="/.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=900&amp;q=80"
-    srcset="/.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=520&amp;q=80 520w,
-            /.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=780&amp;q=80 780w,
-            /.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=1040&amp;q=80 1040w"
-    sizes="(max-width: 980px) 92vw, 520px"
-    width="900" height="1195"
+    class="farm-photo"
+    src="/.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=1200&amp;q=80"
+    srcset="/.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=640&amp;q=80 640w,
+            /.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=960&amp;q=80 960w,
+            /.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=1280&amp;q=80 1280w,
+            /.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=1600&amp;q=80 1600w"
+    sizes="(max-width: 980px) 92vw, 740px"
+    width="1200" height="1594"
     loading="lazy"
     decoding="async"
     alt="Lindsey, Farmer in Chief">
