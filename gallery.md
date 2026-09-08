@@ -1,6 +1,6 @@
 ---
 title: Flower Gallery
-description: Dahlias, sunflowers, and seasonal flowers from Flying Pants Flower Farm.
+description: Dahlias, sunflowers, and seasonal flowers from Flying Pants Farm.
 ---
 
 <header class="page-header">
