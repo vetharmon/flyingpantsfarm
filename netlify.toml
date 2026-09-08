@@ -4,3 +4,14 @@
 
 [build.environment]
   BUNDLE_PATH = "vendor/bundle"
+
+[[plugins]]
+  package = "@netlify/plugin-image-optim"
+
+[[plugins]]
+  package = "netlify-plugin-crop-images"
+
+  [plugins.inputs]
+    image_path = "assets/images"
+    quality = 80
+    webp = true
