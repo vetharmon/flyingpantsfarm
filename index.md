@@ -28,6 +28,13 @@ description: Welcome to Flying Pants Flower Farm.
       <p>
         🌱 Tuber sales open soon — check back for our full list of dahlia varieties.
       </p>
+      <h3>Stay in Bloom</h3>
+      <p>Sign up for farm updates, bloom alerts, and seasonal availability.</p>
+      <form class="popup-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="newsletterForm">
+        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+        <input type="email" name="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
     <div class="card">
       <h3>Contact</h3>
