@@ -1,6 +1,6 @@
-# Flying Pants Flower Farm Jekyll Starter
+# Flying Pants Farm Jekyll Starter
 
-A starter Jekyll site for Flying Pants Flower Farm.
+A starter Jekyll site for Flying Pants Farm.
 
 ## Local preview
 
