@@ -40,7 +40,7 @@ description: Welcome to Flying Pants Flower Farm.
       <h3>Contact</h3>
       <p><strong>Email:</strong> <a href="mailto:flyingpantsfarm@gmail.com">flyingpantsfarm@gmail.com</a></p>
       <p><strong>Instagram:</strong> <a href="https://instagram.com/flyingpants_farm_maine">@flyingpants_farm_maine</a></p>
-      <p><strong>Location:</strong> Add your town/region here</p>
+      <p><strong>Location:</strong> Lyman, Maine</p>
     </div>
   </div>
 </section>
