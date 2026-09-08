@@ -38,8 +38,8 @@ description: Welcome to Flying Pants Flower Farm.
     </div>
     <div class="card">
       <h3>Contact</h3>
-      <p><strong>Email:</strong> <a href="mailto:hello@flyingpants.farm">hello@flyingpants.farm</a></p>
-      <p><strong>Instagram:</strong> <a href="https://instagram.com/YOUR_INSTAGRAM">@YOUR_INSTAGRAM</a></p>
+      <p><strong>Email:</strong> <a href="mailto:flyingpantsfarm@gmail.com">flyingpantsfarm@gmail.com</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/flyingpants_farm_maine">@flyingpants_farm_maine</a></p>
       <p><strong>Location:</strong> Add your town/region here</p>
     </div>
   </div>
