@@ -12,11 +12,31 @@ description: About Flying Pants Farm.
 </header>
 
 <section class="content">
-  <img class="farm-photo" src="/assets/images/gallery/Farm_Pic.jpg" alt="Flying Pants Farm">
+  <img
+    class="farm-photo"
+    src="/.netlify/images?url=/assets/images/gallery/Farm_Pic.jpg&amp;w=1200&amp;q=80"
+    srcset="/.netlify/images?url=/assets/images/gallery/Farm_Pic.jpg&amp;w=640&amp;q=80 640w,
+            /.netlify/images?url=/assets/images/gallery/Farm_Pic.jpg&amp;w=960&amp;q=80 960w,
+            /.netlify/images?url=/assets/images/gallery/Farm_Pic.jpg&amp;w=1280&amp;q=80 1280w,
+            /.netlify/images?url=/assets/images/gallery/Farm_Pic.jpg&amp;w=1600&amp;q=80 1600w"
+    sizes="(max-width: 980px) 92vw, 740px"
+    width="1200" height="904"
+    decoding="async"
+    alt="Flying Pants Farm">
 
   <p>
     I'm Lindsey, Farmer in Chief here at Flying Pants Flower Farm. I was born and raised in Southern Maine, and I always dreamed of having a small farm of my own someday. Dahlias started as a hobby — just a few tubers in the ground to see what would happen — and somewhere along the way that hobby turned into a real passion. Now this farm is where I grow the varieties I love most, share them with our neighbors, and get to spend my days doing exactly what I always wanted to do.
   </p>
 
-  <img class="lindsey-photo" src="/assets/images/gallery/Lindsey.jpg" alt="Lindsey, Farmer in Chief">
+  <img
+    class="lindsey-photo"
+    src="/.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=900&amp;q=80"
+    srcset="/.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=520&amp;q=80 520w,
+            /.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=780&amp;q=80 780w,
+            /.netlify/images?url=/assets/images/gallery/Lindsey.jpg&amp;w=1040&amp;q=80 1040w"
+    sizes="(max-width: 980px) 92vw, 520px"
+    width="900" height="1195"
+    loading="lazy"
+    decoding="async"
+    alt="Lindsey, Farmer in Chief">
 </section>

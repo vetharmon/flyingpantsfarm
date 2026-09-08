@@ -101,7 +101,7 @@ a {
   padding: clamp(3rem, 8vw, 7rem) clamp(1rem, 5vw, 5rem);
   background:
     linear-gradient(rgba(250, 250, 247, .72), rgba(250, 250, 247, .86)),
-    url("/assets/images/gallery/Cover_Dahlia.jpg");
+    url("/.netlify/images?url=/assets/images/gallery/Cover_Dahlia.jpg&w=1600&h=1100&fit=cover&position=center&q=80");
   background-size: cover;
   background-position: center;
 }
@@ -202,11 +202,18 @@ a {
   padding: 0 clamp(1rem, 5vw, 5rem) clamp(3rem, 7vw, 6rem);
 }
 
-.farm-photo {
+.farm-photo,
+.lindsey-photo {
   display: block;
   width: 100%;
+  height: auto;
   margin-bottom: 2rem;
   border-radius: 1rem;
+}
+
+.lindsey-photo {
+  max-width: 520px;
+  margin-top: 2rem;
 }
 
 .notice {
