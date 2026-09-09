@@ -55,7 +55,21 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Variety Name", name: "title", widget: "string" }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: ["Dinnerplate", "Ball", "Pompon", "Decorative", "Cactus", "Waterlily", "Collarette", "Anemone", "Single", "Peony", "Other"]
       - { label: "Photo", name: "image", widget: "image" }
       - { label: "Price", name: "price", widget: "number", value_type: "float" }
       - { label: "Quantity Available", name: "quantity", widget: "number", default: 0, value_type: "int" }
+      - { label: "Currently Available", name: "available", widget: "boolean", default: true }
       - { label: "Description", name: "description", widget: "text", required: false }
+
+  - name: "settings"
+    label: "Store Settings"
+    files:
+      - label: "Tuber Sale Settings"
+        name: "store"
+        file: "_data/store.yml"
+        fields:
+          - { label: "Checkout Is Live", name: "checkout_live", widget: "boolean", default: false }
