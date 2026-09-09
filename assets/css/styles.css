@@ -214,6 +214,25 @@ a {
   background: rgba(242, 184, 36, .12);
   padding: 1rem 1.25rem;
   border-radius: .75rem;
+  margin: 0 0 1.25rem;
+}
+
+.notice strong {
+  color: var(--moss);
+}
+
+.notice.notice-live {
+  border-left-color: var(--olive);
+  background: rgba(74, 139, 60, .12);
+}
+
+.notice.notice-tip {
+  border-left-color: var(--dahlia);
+  background: rgba(224, 85, 122, .09);
+}
+
+.notice.notice-tip strong {
+  color: var(--dahlia);
 }
 
 .shopify-placeholder {
