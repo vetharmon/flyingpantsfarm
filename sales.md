@@ -108,10 +108,7 @@ description: Dahlia tuber sales — order online while supplies last.
   </p>
 
   <p>
-    Every box we send out includes tracking and $100 of insurance from USPS at no extra
-    charge. If something arrives damaged, we want to make it right — just reach out within
+    If something arrives damaged, we want to make it right — just reach out within
     48 hours of delivery with a photo of what you received, and we'll get you a replacement
     or a refund.
   </p>
-
-  <p>
