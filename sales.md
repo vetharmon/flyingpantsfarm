@@ -21,8 +21,8 @@ description: Dahlia tuber sales — order online while supplies last.
     </div>
   {% else %}
     <div class="notice">
-      <strong>Almost ready:</strong> We're finishing up counting and packing for the season —
-      check back soon, and follow along on Instagram for the exact day we open the doors.
+      <strong>Still Growing:</strong> Our flowers are still in the ground, but once we have tubers to sell, 
+      they will be here. — Check back soon, and follow along on Instagram for the exact day we open the doors.
     </div>
   {% endif %}
 
