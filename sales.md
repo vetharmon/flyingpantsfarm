@@ -12,18 +12,81 @@ description: Dahlia tuber sales and seasonal flower products.
 </header>
 
 <section class="content">
-  <div class="notice">
-    <strong>Coming soon:</strong> Dahlia tuber sales will be listed seasonally. Availability will be limited.
-  </div>
 
-  <h2>Shopify section</h2>
-  <div class="shopify-placeholder">
-    <p>
-      Paste your Shopify Buy Button embed code here later.
-    </p>
+  {% if site.data.store.checkout_live %}
+    <div class="notice notice-live">
+      <strong>Sale is live!</strong> Add tubers to your cart below to check out.
+    </div>
+  {% else %}
+    <div class="notice">
+      <strong>Coming soon:</strong> Dahlia tuber sales will be listed seasonally. Availability will be limited.
+    </div>
+  {% endif %}
 
-    <pre><code>&lt;!-- Shopify Buy Button code goes here --&gt;</code></pre>
-  </div>
+  <h2>Dahlia Tubers</h2>
+
+  {% assign all_tubers = site.tubers %}
+  {% if all_tubers.size == 0 %}
+    <p>No tuber varieties have been added yet.</p>
+  {% endif %}
+
+  {% assign grouped = all_tubers | group_by: "type" | sort: "name" %}
+  {% for group in grouped %}
+    <h3 class="tuber-type-heading">{{ group.name | default: "Other" }}</h3>
+
+    <div class="tuber-grid">
+      {% assign sorted_items = group.items | sort: "title" %}
+      {% for tuber in sorted_items %}
+        {% assign sold_out = false %}
+        {% if tuber.available == false or tuber.quantity == 0 %}
+          {% assign sold_out = true %}
+        {% endif %}
+
+        <div class="tuber-card{% if sold_out %} sold-out{% endif %}">
+          <figure>
+            {% if sold_out %}<span class="badge">Sold out</span>{% endif %}
+            {% if tuber.image %}
+              <img src="{{ tuber.image | relative_url }}" alt="{{ tuber.title }} dahlia bloom">
+            {% endif %}
+          </figure>
+
+          <h4>{{ tuber.title }}</h4>
+
+          <p class="qty">
+            {% if sold_out %}
+              0 available
+            {% else %}
+              {{ tuber.quantity }} available
+            {% endif %}
+          </p>
+
+          {% if tuber.price %}
+            <p class="price">${{ tuber.price }}</p>
+          {% endif %}
+
+          {% if tuber.description %}
+            <p class="desc">{{ tuber.description }}</p>
+          {% endif %}
+
+          {% if sold_out %}
+            <button disabled>Sold out</button>
+          {% elsif site.data.store.checkout_live %}
+            <button
+              class="snipcart-add-item"
+              data-item-id="{{ tuber.slug }}"
+              data-item-name="{{ tuber.title }} Dahlia Tuber"
+              data-item-price="{{ tuber.price }}"
+              data-item-url="{{ page.url | absolute_url }}"
+              data-item-image="{{ tuber.image | absolute_url }}">
+              Add to cart
+            </button>
+          {% else %}
+            <button disabled>Not yet on sale</button>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
 
   <h2>Sales notes</h2>
   <ul>
