@@ -115,6 +115,4 @@ description: Dahlia tuber sales — order online while supplies last.
   </p>
 
   <p>
-    (Growing and storage notes for your tubers once they arrive — coming soon.)
-  </p>
 </section>
