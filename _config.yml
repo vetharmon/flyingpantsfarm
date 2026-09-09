@@ -9,6 +9,8 @@ collections:
   flowers:
     output: true
     permalink: /flowers/:name/
+  tubers:
+    output: false
 
 defaults:
   - scope:
