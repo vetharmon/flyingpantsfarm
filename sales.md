@@ -115,4 +115,3 @@ description: Dahlia tuber sales — order online while supplies last.
   </p>
 
   <p>
-</section>
