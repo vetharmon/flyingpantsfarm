@@ -7,8 +7,9 @@ description: Dahlia tuber sales — order online while supplies last.
   <p class="eyebrow">Shop</p>
   <h1>Dahlia Tuber Sale</h1>
   <p class="lede">
-    Order dahlia tubers online below. Quantities are limited per variety, and once
-    a variety sells out it's marked sold out automatically.
+    Every variety below was grown right here on our farm, and we've dug and divided them
+    ourselves. Once a variety is gone for the season, it's gone — so if there's one you've
+    had your eye on, don't wait too long to grab it.
   </p>
 </header>
 
@@ -16,13 +17,23 @@ description: Dahlia tuber sales — order online while supplies last.
 
   {% if site.data.store.checkout_live %}
     <div class="notice notice-live">
-      <strong>Sale is live!</strong> Add tubers to your cart below to check out.
+      <strong>We're open!</strong> Take a look below and add your favorites to your cart.
     </div>
   {% else %}
     <div class="notice">
-      <strong>Coming soon:</strong> Dahlia tuber sales will be listed seasonally. Availability will be limited.
+      <strong>Almost ready:</strong> We're finishing up counting and packing for the season —
+      check back soon, and follow along on Instagram for the exact day we open the doors.
     </div>
   {% endif %}
+
+  <div class="notice notice-tip">
+    <strong>A tip if there's a variety you really want:</strong> our stock counts update as
+    orders come in, but a tuber only gets reserved once your order is actually placed — not
+    while it's just sitting in your cart. If you're after something popular that might sell
+    out fast, we'd suggest checking out with that one on its own (or in a small, quick order)
+    rather than adding it to a big cart you'll fill in slowly — that way nothing slips away
+    while you're still deciding on the rest.
+  </div>
 
   {% assign all_tubers = site.tubers %}
   {% if all_tubers.size == 0 %}
@@ -87,17 +98,23 @@ description: Dahlia tuber sales — order online while supplies last.
     </div>
   {% endfor %}
 
-  <h2>Sales notes</h2>
-  <ul>
-    <li>
-      Shipping: all tuber orders ship USPS Priority Mail Flat Rate, and the shipping cost is
-      calculated automatically at checkout based on how many tubers you order. Orders of 1–5
-      tubers ship in a Small box, 6–12 in a Medium box, and 13–24 in a Large box. Larger orders
-      combine boxes — for example, 25 tubers ships as one Large box plus one Small box, 40 tubers
-      as two Large boxes, and so on.
-    </li>
-    <li>Add local pickup details if available.</li>
-    <li>Add refund/replacement policy for tubers.</li>
-    <li>Add growing/storage disclaimer.</li>
-  </ul>
+  <h2>A few things to know</h2>
+
+  <p>
+    We ship everything USPS Priority Mail, and we pick the box size to fit your order — a
+    small order goes in a small box, and it scales up from there for bigger orders. Shipping
+    is calculated automatically once you're in checkout, so you'll always see the real cost
+    before you pay.
+  </p>
+
+  <p>
+    Every box we send out includes tracking and $100 of insurance from USPS at no extra
+    charge. If something arrives damaged, we want to make it right — just reach out within
+    48 hours of delivery with a photo of what you received, and we'll get you a replacement
+    or a refund.
+  </p>
+
+  <p>
+    (Growing and storage notes for your tubers once they arrive — coming soon.)
+  </p>
 </section>
