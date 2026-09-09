@@ -47,3 +47,15 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "tubers"
+    label: "Dahlia Tubers"
+    folder: "_tubers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Variety Name", name: "title", widget: "string" }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Price", name: "price", widget: "number", value_type: "float" }
+      - { label: "Quantity Available", name: "quantity", widget: "number", default: 0, value_type: "int" }
+      - { label: "Description", name: "description", widget: "text", required: false }
