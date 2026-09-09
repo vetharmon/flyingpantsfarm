@@ -1,13 +1,14 @@
 ---
-title: Sales
-description: Dahlia tuber sales and seasonal flower products.
+title: Tuber Sale
+description: Dahlia tuber sales — order online while supplies last.
 ---
 
 <header class="page-header">
   <p class="eyebrow">Shop</p>
-  <h1>Sales</h1>
+  <h1>Dahlia Tuber Sale</h1>
   <p class="lede">
-    Dahlia tubers, seasonal flowers, and special releases will be available here when the season opens.
+    Order dahlia tubers online below. Quantities are limited per variety, and once
+    a variety sells out it's marked sold out automatically.
   </p>
 </header>
 
@@ -22,8 +23,6 @@ description: Dahlia tuber sales and seasonal flower products.
       <strong>Coming soon:</strong> Dahlia tuber sales will be listed seasonally. Availability will be limited.
     </div>
   {% endif %}
-
-  <h2>Dahlia Tubers</h2>
 
   {% assign all_tubers = site.tubers %}
   {% if all_tubers.size == 0 %}
@@ -90,7 +89,13 @@ description: Dahlia tuber sales and seasonal flower products.
 
   <h2>Sales notes</h2>
   <ul>
-    <li>Add shipping window information.</li>
+    <li>
+      Shipping: all tuber orders ship USPS Priority Mail Flat Rate, and the shipping cost is
+      calculated automatically at checkout based on how many tubers you order. Orders of 1–5
+      tubers ship in a Small box, 6–12 in a Medium box, and 13–24 in a Large box. Larger orders
+      combine boxes — for example, 25 tubers ships as one Large box plus one Small box, 40 tubers
+      as two Large boxes, and so on.
+    </li>
     <li>Add local pickup details if available.</li>
     <li>Add refund/replacement policy for tubers.</li>
     <li>Add growing/storage disclaimer.</li>
