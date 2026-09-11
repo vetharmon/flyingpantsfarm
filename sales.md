@@ -20,7 +20,7 @@ description: Dahlia tuber sales — order online while supplies last.
       <strong>We're open!</strong> Take a look below and add your favorites to your cart.
     </div>
   {% else %}
-    <div class="notice">
+    <div class="notice notice-soon">
       <strong>Still Growing:</strong> Our flowers are still in the ground, but once we have tubers to sell, 
       they will be here. — Check back soon, and follow along on Instagram for the exact day we open the doors.
     </div>
