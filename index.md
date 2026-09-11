@@ -20,7 +20,7 @@ nav_order: 1
 </section>
 
 <section class="section">
-  <div class="grid two">
+  <div class="grid two contact-grid">
     <div>
       <p class="eyebrow">Farm Updates</p>
       <h2>Seasonal availability.</h2>
@@ -30,19 +30,24 @@ nav_order: 1
       <p>
         🌱 Tuber sales open soon — check back for our full list of dahlia varieties.
       </p>
-      <h3>Stay in Bloom</h3>
-      <p>Sign up for farm updates, bloom alerts, and seasonal availability.</p>
-      <form class="popup-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="newsletterForm">
-        <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
-        <input type="email" name="email" placeholder="Your email" required>
-        <button type="submit">Subscribe</button>
-      </form>
     </div>
-    <div class="card">
+    <div class="card card-compact">
       <h3>Contact</h3>
       <p><strong>Email:</strong> <a href="mailto:flyingpantsfarm@gmail.com">flyingpantsfarm@gmail.com</a></p>
       <p><strong>Instagram:</strong> <a href="https://instagram.com/flyingpants_farm_maine">@flyingpants_farm_maine</a></p>
       <p><strong>Location:</strong> Lyman, Maine</p>
     </div>
+  </div>
+</section>
+
+<section class="section alt newsletter-band">
+  <div class="newsletter-inner">
+    <h3>Stay in Bloom</h3>
+    <p>Sign up for farm updates, bloom alerts, and seasonal availability.</p>
+    <form class="popup-form" name="newsletter-inline" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="newsletterFormInline">
+      <p style="display:none"><label>Don't fill this: <input name="bot-field"></label></p>
+      <input type="email" name="email" placeholder="Your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
 </section>
