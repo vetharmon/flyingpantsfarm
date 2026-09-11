@@ -1,6 +1,7 @@
 ---
 title: About Us
 description: About Flying Pants Farm.
+nav_order: 2
 ---
 
 <header class="page-header">
