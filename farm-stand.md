@@ -1,6 +1,8 @@
 ---
 title: Farm Stand
 description: Farm stand hours and seasonal flower availability.
+published: false
+nav_order: 3
 ---
 
 <header class="page-header">
