@@ -414,3 +414,37 @@ a {
     padding: 2rem 1.5rem;
   }
 }
+
+.contact-grid {
+  grid-template-columns: 2fr 1fr;
+}
+
+.card-compact {
+  padding: 1rem;
+  font-size: .9rem;
+}
+
+.card-compact h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.newsletter-band {
+  text-align: center;
+}
+
+.newsletter-inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.newsletter-inner .popup-form {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
