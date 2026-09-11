@@ -1,6 +1,8 @@
 ---
 title: Tuber Sale
+nav_title: Sales
 description: Dahlia tuber sales — order online while supplies last.
+nav_order: 4
 ---
 
 <header class="page-header">
@@ -110,5 +112,5 @@ description: Dahlia tuber sales — order online while supplies last.
   <p>
     If something arrives damaged, we want to make it right — just reach out within
     48 hours of delivery with a photo of what you received, and we'll get you a replacement
-    or a refund.
+    if possible or a refund.
   </p>
