@@ -3,15 +3,19 @@ backend:
   repo: vetharmon/flyingpantsfarm
   branch: main
 
+publish_mode: editorial_workflow
+
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
 collections:
   - name: "posts"
     label: "Current Events"
+    label_singular: "Event"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{date}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
@@ -50,19 +54,22 @@ collections:
 
   - name: "tubers"
     label: "Dahlia Tubers"
+    label_singular: "Tuber"
     folder: "_tubers"
     create: true
     slug: "{{slug}}"
+    identifier_field: "title"
+    summary: "{{title}} — ${{fields.price}} — {{fields.quantity}} left {{fields.available}}"
     fields:
-      - { label: "Variety Name", name: "title", widget: "string" }
+      - { label: "Variety Name", name: "title", widget: "string", hint: "This is the name shown on the tuber card." }
+      - { label: "Photo", name: "image", widget: "image", hint: "Square photos look best on the card." }
       - label: "Type"
         name: "type"
         widget: "select"
         options: ["Dinnerplate", "Ball", "Pompon", "Decorative", "Cactus", "Waterlily", "Collarette", "Anemone", "Single", "Peony", "Other"]
-      - { label: "Photo", name: "image", widget: "image" }
-      - { label: "Price", name: "price", widget: "number", value_type: "float" }
-      - { label: "Quantity Available", name: "quantity", widget: "number", default: 0, value_type: "int" }
-      - { label: "Currently Available", name: "available", widget: "boolean", default: true }
+      - { label: "Price", name: "price", widget: "number", value_type: "float", hint: "Dollars, e.g. 12.50 — no dollar sign." }
+      - { label: "Quantity Available", name: "quantity", widget: "number", default: 0, value_type: "int", hint: "How many are left to sell." }
+      - { label: "Currently Available", name: "available", widget: "boolean", default: true, hint: "Turn this off to hide the Add to Cart button for just this tuber, even if the sale is on." }
       - { label: "Description", name: "description", widget: "text", required: false }
 
   - name: "settings"
@@ -72,4 +79,4 @@ collections:
         name: "store"
         file: "_data/store.yml"
         fields:
-          - { label: "Checkout Is Live", name: "checkout_live", widget: "boolean", default: false }
+          - { label: "Checkout Is Live", name: "checkout_live", widget: "boolean", default: false, hint: "Master switch for the whole shop. Turn ON the day tuber sales open, OFF when you're sold out or between sales." }
