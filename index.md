@@ -1,6 +1,8 @@
 ---
 title: Welcome
 description: Welcome to Flying Pants Farm.
+nav_title: Home
+nav_order: 1
 ---
 
 <section class="hero">
