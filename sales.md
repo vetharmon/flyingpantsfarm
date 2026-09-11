@@ -18,23 +18,29 @@ nav_order: 4
 <section class="content">
 
   {% if site.data.store.checkout_live %}
-    <div class="notice notice-live">
-      <strong>We're open!</strong> Take a look below and add your favorites to your cart.
+    <div class="ribbon-notice ribbon-gold">
+      <div class="ribbon-head">
+        <img class="ribbon-mark" src="{{ '/assets/images/marks/dahlia-mark-gold.svg' | relative_url }}" alt="">
+        <span class="ribbon-title">We're open!</span>
+      </div>
+      <p>Take a look below and add your favorites to your cart.</p>
     </div>
   {% else %}
-    <div class="notice notice-soon">
-      <strong>Still Growing:</strong> Our flowers are still in the ground, but once we have tubers to sell, 
-      they will be here. — Check back soon, and follow along on Instagram for the exact day we open the doors.
+    <div class="ribbon-notice ribbon-sage">
+      <div class="ribbon-head">
+        <img class="ribbon-mark" src="{{ '/assets/images/marks/dahlia-mark-sage.svg' | relative_url }}" alt="">
+        <span class="ribbon-title">Still growing</span>
+      </div>
+      <p>Our flowers are still in the ground, but once we have tubers to sell, they will be here — check back soon, and follow along on Instagram for the exact day we open the doors.</p>
     </div>
   {% endif %}
 
-  <div class="notice notice-tip">
-    <strong>A tip if there's a variety you really want:</strong> our stock counts update as
-    orders come in, but a tuber only gets reserved once your order is actually placed — not
-    while it's just sitting in your cart. If you're after something popular that might sell
-    out fast, we'd suggest checking out with that one on its own (or in a small, quick order)
-    rather than adding it to a big cart you'll fill in slowly — that way nothing slips away
-    while you're still deciding on the rest.
+  <div class="ribbon-notice ribbon-pink">
+    <div class="ribbon-head">
+      <img class="ribbon-mark" src="{{ '/assets/images/marks/dahlia-mark-pink.svg' | relative_url }}" alt="">
+      <span class="ribbon-title">A little tip</span>
+    </div>
+    <p>If there's a variety you really want: our stock counts update as orders come in, but a tuber only gets reserved once your order is actually placed — not while it's just sitting in your cart. If you're after something popular that might sell out fast, we'd suggest checking out with that one on its own (or in a small, quick order) rather than adding it to a big cart you'll fill in slowly — that way nothing slips away while you're still deciding on the rest.</p>
   </div>
 
   {% assign all_tubers = site.tubers %}
@@ -112,5 +118,5 @@ nav_order: 4
   <p>
     If something arrives damaged, we want to make it right — just reach out within
     48 hours of delivery with a photo of what you received, and we'll get you a replacement
-    if possible or a refund.
+    or a refund.
   </p>
