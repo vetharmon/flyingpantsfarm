@@ -209,49 +209,72 @@ a {
   border-radius: 1rem;
 }
 
-.notice {
-  border: 1px solid rgba(43, 83, 41, .18);
-  border-left-width: 4px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, .94), rgba(240, 243, 235, .92));
-  box-shadow: 0 10px 20px rgba(43, 83, 41, .08);
-  padding: 1rem 1.2rem;
-  border-radius: 1rem;
+.ribbon-notice {
+  padding: 1.1rem 1.4rem;
   margin: 0 0 1.25rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 14px 100%, 0 calc(100% - 14px));
 }
 
-.notice strong {
+.ribbon-head {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .4rem;
+}
+
+.ribbon-mark {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.ribbon-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.ribbon-notice p {
+  margin: 0;
+  font-size: .92rem;
+  line-height: 1.6;
+}
+
+.ribbon-sage {
+  background: rgba(125, 181, 107, .16);
+}
+
+.ribbon-sage .ribbon-title {
   color: var(--moss);
 }
 
-.notice.notice-soon {
-  border-color: rgba(188, 132, 17, .42);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, .95), rgba(242, 184, 36, .12));
+.ribbon-sage p {
+  color: #234a1d;
 }
 
-.notice.notice-soon strong {
-  color: #6F5200;
+.ribbon-pink {
+  background: rgba(224, 85, 122, .12);
 }
 
-.notice.notice-live {
-  border-color: rgba(74, 139, 60, .45);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, .95), rgba(125, 181, 107, .20));
+.ribbon-pink .ribbon-title {
+  color: #7a2a44;
 }
 
-.notice.notice-live strong {
-  color: var(--olive);
+.ribbon-pink p {
+  color: #5c2035;
 }
 
-.notice.notice-tip {
-  border-color: rgba(224, 85, 122, .42);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, .95), rgba(224, 85, 122, .14));
+.ribbon-gold {
+  background: rgba(242, 184, 36, .18);
 }
 
-.notice.notice-tip strong {
-  color: var(--dahlia);
+.ribbon-gold .ribbon-title {
+  color: #6f5200;
+}
+
+.ribbon-gold p {
+  color: #55400a;
 }
 
 .shopify-placeholder {
